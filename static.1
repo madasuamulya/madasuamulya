@@ -1,0 +1,20 @@
+class Main
+{ 
+    int a=10;
+    static int b=20;
+    void m1()
+    {
+        System.out.println("a="+a+" b="+b);
+    }
+    static void m2()
+    {
+        Main s=new Main();
+        System.out.println("a="+s.a+" b="+b);
+    }
+    public static void main(String[] args)
+    {
+       Main s1=new Main();
+       s1.m1();
+       s1.m2();
+    }
+}
